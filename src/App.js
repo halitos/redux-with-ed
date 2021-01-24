@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <h1>Counter {counter}</h1>
       <button onClick={() => dispatch(increment(3))}>+</button>
-      <button onClick={() => dispatch(decrement(2))}>--</button>
+      <button onClick={() => dispatch(decrement(2))}>-</button>
       <div>
-        <button onClick={() => dispatch(isLogged())}>Open sesame</button>
+        <button onClick={() => dispatch(isLogged())}>Show</button>
         {isLoggedIn && <h3>Members only</h3>}
       </div>
     </div>
