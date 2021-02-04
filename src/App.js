@@ -10,10 +10,12 @@ function App() {
   return (
     <div className="App">
       <h1>Counter {counter}</h1>
-      <button onClick={() => dispatch(increment(3))}>+</button>
-      <button onClick={() => dispatch(decrement(2))}>-</button>
+      <button onClick={() => dispatch(increment(1))}>+</button>
+      <button onClick={() => dispatch(decrement(1))}>-</button>
       <div>
-        <button onClick={() => dispatch(isLogged())}>Show</button>
+        <button onClick={() => dispatch(isLogged())}>
+          {isLoggedIn ? "Hide" : "Show"}
+        </button>
         {isLoggedIn && <h3>Members only</h3>}
       </div>
     </div>
